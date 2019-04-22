@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Register</title>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/header.css">
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/login.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/footer.css>" <link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+
+</head>
+
+<body>
+	<div id="" class=" background">
+		<%include common/header%>
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<a href="/homepage">Home</a>
+			<a href="/menu">Menu</a>
+			<a href="/location">Location</a>
+			<a href="/feedback">Feedback</a>
+			<a href="/contact">Contact Us</a>
+			<a href="/franchise">Franchise</a>
+		</div>
+		<div id="menu-min" class="bg_dark">
+			<img class="m-3 w-50" src="../img/logo.png" alt="">
+			<span class="float-right" style="font-size:30px;cursor:pointer;color: #FAFAFA;" onclick="openNav()">&#9776;</span>
+
+		</div>
+		<div class="">
+
+			<div class="limiter">
+				<div class="container-login100">
+					<div class="wrap-login100">
+						<div class="login100-pic js-tilt" data-tilt>
+							<img src="../img/img-01.png" alt="IMG">
+						</div>
+
+						<form class="login100-form validate-form">
+							<span class="login100-form-title">
+								 Register
+							</span>
+
+							<div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+								<input class="input100" type="text" name="email" placeholder="Your Email">
+								<span class="focus-input100"></span>
+								<span class="symbol-input100">
+									<i class="fa fa-envelope" aria-hidden="true"></i>
+								</span>
+							</div>
+
+							<div class="wrap-input100 validate-input" data-validate="Password is required!">
+								<input class="input100" type="password" name="pass" placeholder="Your password">
+								<span class="focus-input100"></span>
+								<span class="symbol-input100">
+									<i class="fa fa-lock" aria-hidden="true"></i>
+								</span>
+							</div>
+
+							<div class="wrap-input100 validate-input" data-validate="Password isn't match!">
+								<input class="input100" type="password" name="repass" placeholder="Re-enter password">
+								<span class="focus-input100"></span>
+								<span class="symbol-input100">
+									<i class="fa fa-lock" aria-hidden="true"></i>
+								</span>
+							</div>
+
+							<div class="wrap-input100 validate-input" data-validate="Phone is required: ex 0123-456-789">
+								<input class="input100" type="text" name="phone" placeholder="Your phone number">
+								<span class="focus-input100"></span>
+								<span class="symbol-input100">
+									<i class="fas fa-phone-volume" aria-hidden="true"></i>
+								</span>
+							</div>
+
+							<div class="wrap-input100 validate-input" data-validate="Write anything! The information isn't important!">
+								<input class="input100" type="text" name="address" placeholder="Your address">
+								<span class="focus-input100"></span>
+								<span class="symbol-input100">
+									<i class="fas fa-map-marked-alt" aria-hidden="true"></i>
+								</span>
+							</div>
+
+
+							<div class="container-login100-form-btn">
+								<button class="login100-form-btn">
+									Sign-up
+								</button>
+							</div>
+
+
+
+							<div class="text-center p-t-136">
+
+								<span class="txt1">
+									Already have an account?
+								</span>
+								<a class="txt2 beautiful" href="/homepage">
+									Sign-in
+									<i class="fas fa-sign-in-alt"></i>
+								</a>
+
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<%include common/footer%>
+
+	</div>
+
+
+
+
+
+	<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="vendor/tilt/tilt.jquery.min.js"></script>
+	<script>
+		$('.js-tilt').tilt({
+			scale: 1.5
+		})
+
+		function openNav() {
+			document.getElementById("mySidenav").style.width = "250px";
+			document.getElementById("main").style.marginLeft = "250px";
+		}
+
+		function closeNav() {
+			document.getElementById("mySidenav").style.width = "0";
+			document.getElementById("main").style.marginLeft = "0";
+		}
+	</script>
+	<!--===============================================================================================-->
+
+</body>
+
+</html>

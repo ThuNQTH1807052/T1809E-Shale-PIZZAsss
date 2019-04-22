@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Feedback - Shale PIZZAzzz</title>
+
+  <!-- Custom styles for this template -->
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/feedback.css">
+  <link rel="stylesheet" href="css/star-rating.css">
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+
+  <!-- Bootstrap core JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  <!--Font Awesome-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
+</head>
+
+<body>
+    <% include common/header %>
+
+	<div class="container-fluid feedback-bg">
+		<div class="container py-5">
+			<div class="row">
+				<div class="col-lg-6">
+					<h1 class="h1-1">Feedback</h1>
+					<hr class="hr">
+					<p class="p-1">Shale PIZZAzzz is proud of serving over 100,0000 meals everyday all over the world.<br>
+					We're still trying to bring to you better services. <br>
+					Your feedback are the motivation for us to moving forward.</p>
+					<a href="#feedback" class="btn btn-outline-warning" role="button"><i class="far fa-hand-point-right"></i> Feedback now </a>
+				<br>
+				<br>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <div class="bg-dark" id="feedback">
+		<div class="container bg-dark text-white py-5">
+			<div class="row">
+				<div class="col-lg-6">
+					<h3 class="h3-1">YOUR EXPERIENCE</h3>
+					<hr class="hr">
+          <br>
+					<form action="/homepage" name="feedback-form">
+						<div class="form-group">
+							<label for="experience-date" class="text-1">Experience Date</label>
+							<input type="date" class="form-control font-weight-light" id="experience-date" name="experience-date" default="">
+						</div>
+						<div class="form-group">
+							<label for="experience-type" class="text-1">Experience Type</label>
+							<select class="form-control font-weight-light" id="experience-type" name="experience-type">
+								<option>Delivery</option>
+								<option>Pick Up</option>
+								<option>At Restaurant</option>
+								<option>Others</option>
+							</select>
+						</div>
+
+            <br>
+  					<p class="text-1">How was your experience at Shale PIZZAzzz?</p>
+  					<small class="text-warning">Where 5 is very good and 1 is very poor</small><br>
+
+  					<x-star-rating value="3" number="5"></x-star-rating>
+
+  					<div class="form-group mt-3">
+  						<textarea class="form-control font-weight-light" type="textarea" name="comments" id="comments"
+                                placeholder="Let us know more by your comments" maxlength="4000" rows="5"></textarea>
+  					</div>
+
+            <div class="form-group">
+							<label for="name" class="text-1">Your name:</label>
+							<input type="text" class="form-control font-weight-light" id="name" name="name" placeholder="Your name" required>
+						</div>
+						<div class="form-group">
+							<label for="email" class="text-1">Email:</label>
+							<input type="email" class="form-control font-weight-light" id="email" name="email" placeholder="Email" required>
+          </div>
+
+            <div class="form-group text-center pt-3">
+							<input type="submit" class="btn btn-outline-warning text-1" name="btnFeedback" id="btnFeedback" value="Submit Feedback"/>
+						</div>
+					</form>
+
+				</div>
+        <!-- end div col-6 1-->
+        <div class="col-lg-6 pt-5">
+          <div class="row pt-4 pl-5">
+            <div class="col-lg-4">
+              <img class="w-100 rounded-circle" src="../img/ng_nt1.jpg" alt="">
+            </div>
+            <div class="col-lg-8">
+              <h2 class="font-text-1">BARACK OBAMA</h2>
+              <p class="text-secondary">-Former President of United States-</p>
+              <p class="font-italic">"Awesome pricing. Pleasant service. I came here for lunch with my coworkers and the guy was extremely friendly and had the patience to deal with our indecisiveness, plus we were in and out of there in no time. Would definitely recommend anyone in the pleasanton area to go."</p>
+            </div>
+          </div>
+          <!-- end row 1 -->
+          <hr>
+          <div class="row pt-5 pl-5">
+            <div class="col-lg-8">
+              <h2 class="font-text-1">BEYONCÉ</h2>
+              <p class="text-secondary">-Singer-</p>
+              <p class="font-italic">"The pizza is fresh and the staff seem to be typical high school students. Don't ask for too much of a variation on toppings because they don't / can't seem to accommodate. I like going here mostly because I like their cheesy garlic bread although I have been to other Shale's (in Guelph) and the garlic bread was better. The pizza often has too much sauce on it, but asking the staff to go easy on the sauce usually remedies this."</p>
+            </div>
+            <div class="col-lg-4">
+              <img class="w-100 rounded-circle" src="../img/ng_nt2.jpg" alt="">
+            </div>
+          </div>
+          <!-- end row 2 -->
+        </div>
+        <!-- end div col-6 2 -->
+			</div>
+      <!-- end row  -->
+		</div>
+	</div>
+
+    <% include common/footer %>
+
+	<script src="js/star-rating.js"></script>
+	<script src="js/side-nav.js"></script>
+  <script src="js/validate-form.js"></script>
+	<script src="js/validate-feedback.js"></script>
+
+</body>
+</html>

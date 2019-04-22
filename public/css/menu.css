@@ -1,0 +1,100 @@
+@media (max-width: 768px) {
+  #big-menu {
+    display: none
+  }
+}
+.menu-bg {
+  background-image: url("../img/pizza-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.bg_dark {
+  background-color: #000;
+}
+
+@media (min-width:768px) {
+  #menu-min {
+    display: none;
+  }
+}
+.nav-item {
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+}
+.menu-nav {
+  color: #000;
+  font-family: "Arial", Gadget, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.menu-nav:hover {
+  color: #fff;
+}
+.menu-nav:after {
+  background-color: #000;
+}
+
+.pizza-bg {
+  background-image: url("../img/pizza-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+}
+
+.menu-title {
+  color: white;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 43px;
+}
+
+.hr {
+  border: solid 1px;
+  color: #FF9F00;
+}
+
+.p-1 {
+  color: white;
+}
+
+.card-title {
+  color: #FF9F00;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-weight: bold;
+  font-size: 22px
+}
+
+.nav-bg {
+background-color: black;
+}
+
+.menu-nav-link {
+	color: #000;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 22px;
+	font-weight: bold;
+}
+.menu-nav-link:hover {
+	color: #C4191E;
+}
+
+.price-text {
+  color: #c0c0c0;
+  font-size: 16px;
+}
+
+.menu-content {
+  margin-bottom: -16px;
+}
+
+.h1-1 {
+  color: white;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 43px;
+}
+
+.p-1 {
+  font-family: "Arial", Gadget, sans-serif;
+  font-size: 22px;
+}

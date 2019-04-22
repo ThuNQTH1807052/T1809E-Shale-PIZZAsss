@@ -1,0 +1,118 @@
+/* Make the image fully responsive */
+  .carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+
+.img-responsive {
+  width: 700px;
+  height: 270px;
+}
+
+
+@media (max-width: 768px) {
+  #big-menu {
+    display: none;
+  }
+
+  #daily {
+    display: none;
+  }
+
+  .banner-minwidth {
+    width: auto;
+    /* margin-Left: 17px; */
+    margin-top: 5px
+  }
+}
+
+@media (min-width:768px) {
+  .size-banner {
+    width: 750px;
+  }
+
+  #menu-min {
+    display: none;
+  }
+
+  #menu-hive {
+    display: none;
+  }
+}
+
+.margin_ {
+  margin-left: 45px;
+}
+
+.border {
+  border-radius: 10px;
+}
+
+.img-slide {
+  height: auto;
+  width: 100%
+}
+
+/* For width smaller than 400px: */
+@media only screen and (max-width: 800px) {
+  .img-responsive {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.skew-menu {
+  text-align: center;
+  margin-top: 3em;
+}
+
+.skew-menu ul {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  transform: skew(-25deg);
+}
+
+.skew-menu ul li {
+  background: #ff9900;
+  float: left;
+  border-right: 1px solid #eee;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  text-transform: verdana;
+  color: #FF9900;
+  font-weight: bolder;
+  transition: all 0.3s linear;
+}
+
+.skew-menu ul li:first-child {
+  border-radius: 9px 0 0 9px;
+}
+
+.skew-menu ul li:last-child {
+  border-right: none;
+  border-radius: 0 9px 9px 0;
+}
+
+.skew-menu ul li:hover {
+  background: #C4191E;
+  color: #ff6347;
+}
+
+.skew-menu ul li a {
+  display: block;
+  padding: 1em 2em;
+  color: inherit;
+  text-decoration: none;
+  transform: skew(25deg);
+}
+
+.text-lg {
+	font-size: 20px;
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+.hr {
+		border: solid 1px;
+		color: #FF9F00;
+	}

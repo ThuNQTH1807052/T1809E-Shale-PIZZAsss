@@ -1,0 +1,23 @@
+.footer-bg {
+	background-color: #000;
+}
+.footer {
+	color: #fff;
+}
+.footer-link {
+	text-decoration: none;
+	color: #fff
+}
+.footer-link:hover {
+	text-decoration: none;
+	color: #FF9F00;
+}
+.footer-icon {
+	font-size: 45px
+}
+.footer-icon-1 {
+	font-size: 15px
+}
+.footer-icon-2 {
+	font-size: 25px
+}

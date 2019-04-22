@@ -1,0 +1,36 @@
+@media (max-width: 768px) {
+  #big-menu {
+    display: none
+  }
+}
+.bg_dark{
+  background-color: #000;
+}
+
+@media (min-width:768px) {
+  #menu-min {
+    display: none;
+  }
+}
+.location-bg {
+  background-image: url("../img/location-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.h1-1 {
+  color: white;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 43px;
+}
+.hr {
+  border: solid 1px;
+  color: #FF9F00;
+}
+.p-1 {
+  color: white;
+  font-size: 18px;
+}
+.h2 {
+  font-family: "Trebuchet MS", Gadget, sans-serif;
+}

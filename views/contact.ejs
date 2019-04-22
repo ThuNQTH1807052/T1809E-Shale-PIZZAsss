@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Contact Us - Shale PIZZAzzz</title>
+
+  <!-- Custom styles for this template -->
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/contact.css">
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css" >
+
+  <!-- Bootstrap core JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  <!--Font Awesome-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+
+<body>
+	<% include common/header %>
+
+	<div class="container-fluid contact-bg">
+		<div class="container py-5">
+			<h1 class="h1-1 text-center pt-3">Contact Us</h1>
+			<hr class="hr-1">
+			<br>
+			<p class="p-1 text-center text-light">For Delivery<br>
+			<i class="fas fa-phone-square text-warning"></i> 1900 1900</p>
+		</div>
+	</div>
+
+	<div class="bg-dark">
+		<div class="container bg-dark text-white pt-4 pb-4">
+			<div class="row">
+            <div class="col-lg-6 mt-3">
+                <h3 class="h3-1">Shale PIZZAzzz's Office</h3>
+                <hr class="hr-2" align="left">
+				        <br>
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.953143777392!2d105.8161581140324!3d20.99451528601691!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac8e1fc4d3d1%3A0x57d181f147bf9f50!2zMjgzIFBo4buRIEtoxrDGoW5nIFRydW5nLCBLaMawxqFuZyBUcnVuZywgVGhhbmggWHXDom4sIEjDoCBO4buZaSwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1553053232320" width="600" height="450" frameborder="0" style="border:0" allowfullscreen class="embed-responsive-item"></iframe>
+                </div>
+
+
+                <div class="mt-4">
+                    <p class="text-1">
+                        <span class="font-weight-bold text-warning">Shale PIZZAzzz Joint Stock Company</span><br>
+                        6th Floor, Vedec Building,<br>
+                        283 Khuong Trung, Thanh Xuan District, Hanoi, Vietnam<br>
+                        Tel: +84 900 8008<br>
+                        Fax: +84 900 7008<br>
+						<a href = "mailto: thunqth1807052@fpt.edu.vn" target="_blank" class="text-light">thunqth1807052@fpt.edu.vn</a>
+                    </p>
+                </div>
+            </div>
+			<div class="col-lg-1"></div>
+            <div class="col-lg-5 mt-3">
+                <h3 class="h3-1">Contact Form</h3>
+                <hr class="hr-2" align="left">
+				<br>
+                <form action="/homepage" name="contact-form">
+                    <div class="form-group">
+                        <label for="your-name" class="text-1">Your name:</label>
+                        <input type="text" class="form-control font-weight-light" id="your-name" placeholder="Your name" name="name" required>
+                    </div>
+                    <div class="form-group" >
+                        <label for="email" class="text-1">Email:</label>
+                        <input type="email" class="form-control font-weight-light" id="email" placeholder="Email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject" class="text-1">Subject:</label>
+                        <input type="text" class="form-control font-weight-light" id="subject" placeholder="Subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control font-weight-light" type="textarea" name="message" id="message"
+                                  placeholder="Compose message" maxlength="4000" rows="5"></textarea>
+                    </div>
+                    <div class="form-group text-center pt-3">
+						<input type="submit" class="btn btn-outline-warning text-1" name="btnContact" id="btnContact" value="Send Message"/>
+					</div>
+
+                </form>
+            </div>
+        </div>
+		</div>
+	</div>
+
+    <% include common/footer %>
+
+    <script src="js/side-nav.js"></script>
+    <script src="js/validate-form.js"></script>
+  	<script src="js/validate-contact.js"></script>
+
+</body>

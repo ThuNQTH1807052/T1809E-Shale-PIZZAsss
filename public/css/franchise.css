@@ -1,0 +1,51 @@
+@media (max-width: 768px) {
+  #big-menu {
+    display: none
+  }
+}
+
+.bg_dark {
+  background-color: #000;
+}
+
+@media (min-width:768px) {
+  #menu-min {
+    display: none;
+  }
+}
+
+	.franchise-bg {
+		background-image: url("../img/franchise-bg.jpg");
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+	.h1-1 {
+		font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+		font-size: 43px;
+	}
+	.h1-2 {
+		font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+		font-size: 38px;
+	}
+	.hr {
+		border: solid 1px;
+		color: #FF9F00;
+	}
+	.p-1 {
+		font-size: 18px;
+	}
+	.hr {
+		border: solid 1px;
+		color: #FF9F00;
+	}
+  .btn-gallery: hover {
+    color: #C4191E;
+  }
+
+  .new-title {
+    text-transform: uppercase;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 35px;
+    font-weight: bold;
+  }

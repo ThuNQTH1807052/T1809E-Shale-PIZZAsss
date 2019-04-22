@@ -1,0 +1,19 @@
+.wrapper {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.contact-background {
+  background-image: url("https://i.imgur.com/82qxtTf.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.color-product {
+  background-color: #000000;
+}
+.ml_2{
+    margin-left: 67px;
+    border-radius: 20px
+  }

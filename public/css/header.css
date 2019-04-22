@@ -1,0 +1,193 @@
+@media (max-width: 768px) {
+  #big-menu {
+    display: none
+  }
+}
+
+.bg_dark {
+  background-color: #000;
+}
+
+@media (min-width:768px) {
+  #menu-min {
+    display: none;
+  }
+}
+
+.modal-title-1 {
+	text-align: center;
+	font-family: "Arial", Gadget, sans-serif;
+	color: #C4191E;
+}
+
+.hr-1 {
+  border: solid 0.7px;
+  color: #FF9F00;
+}
+.hr-2 {
+  border: solid 0.4px;
+  color: #FF9F00;
+}
+
+.login-icon {
+	color: #FF9F00;
+	font-size: 30px;
+}
+.register-icon {
+	color: #FF9F00;
+}
+
+.button {
+	background-color: #FF9F00;
+	color: #fff;
+}
+.button:hover {
+	background-color: #C4191E;
+	color: #fff;
+}
+
+.link-text {
+	color: #FF9F00;
+}
+
+.link-text:hover {
+	color: #C4191E;
+}
+
+.nav-bg {
+	background-color: #000;
+}
+
+
+.nav-text {
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 30px,
+}
+
+
+.color-1{
+  color: #C4191E
+
+}
+
+.bg-2{
+background: rgba(37, 35, 30, 0.49)
+}
+
+.btn_ {
+  color: #fff;
+  /* cursor: pointer; */
+  display: inline-block;
+  /* font-size:30px; */
+  /* font-weight: 400; */
+  /* line-height: 16px; */
+  /* margin: 0 0 2em; */
+  max-width: auto;
+  /* position: relative; */
+  /* text-decoration: none; */
+  text-transform: uppercase;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-weight: bolder;
+
+}
+
+.btn-2 {
+    letter-spacing: 0;
+}
+
+.btn-2.color-orange:hover,
+.btn-2.color-orange:active {
+  color: orange;
+}
+
+.btn-2:hover,
+.btn-2:active {
+  letter-spacing: 1px;
+}
+
+.btn-2:after,
+.btn-2:before {
+  backface-visibility: hidden;
+  border: 1px solid rgba(#fff, 0);
+  bottom: 0px;
+  content: " ";
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  /* transition: all 280ms ease-in-out; */
+  width: 0;
+  opacity: 0;
+}
+
+.btn-2.color-orange:after,
+.btn-2.color-orange:before {
+  border: 1px solid orange;
+}
+
+
+.btn-2:hover:after,
+.btn-2:hover:before {
+  backface-visibility: hidden;
+  transition: width 500ms ease-in-out;
+  width: 70%;
+  opacity: 1;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #FAFAFA;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/* css cho noti của cart */
+.circle {
+	position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  font-size: 10px;
+  color: #fff;
+  line-height: 15px;
+  text-align: center;
+  background: red
+}
+
+.itempro {
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-right: 50px;
+}

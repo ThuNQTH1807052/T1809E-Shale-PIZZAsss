@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Reset Password - Shale PIZZAzzz</title>
+
+  <!-- Custom styles for this template -->
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/homepage.css">
+  <link rel="stylesheet" href="css/util.css">
+  <link rel="stylesheet" href="css/login.css">
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css" >
+
+  <!-- Bootstrap core JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  <!--Font Awesome-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <title>Reset Password</title>
+
+</head>
+
+<body>
+
+	 <%include common/header%>
+  <div class="background">
+   
+    <div class="container py-5">
+      <div id="wrapper">
+        <div class="limiter">
+          <div class="container-login100">
+            <div class="wrap-login100">
+              <div class="login100-pic js-tilt" data-tilt>
+                <img class="forgot" src="../img/forgot.jpg" alt="IMG">
+              </div>
+
+              <form class="login100-form validate-form">
+                <span class="login100-form-title">
+                  Forgot your password?
+                </span>
+
+                <div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+                  <input class="input100" type="text" name="email" placeholder="Email">
+                  <span class="focus-input100"></span>
+                  <span class="symbol-input100">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                  </span>
+                </div>
+                <div class="container-login100-form-btn">
+                  <button class="login100-form-btn">
+                    Send me now!
+                  </button>
+                </div>
+                <div class="text-center p-t-12">
+                  <a href="forgot" class="txt1">
+                    <p>Enter your email address to receive password reset instructions. If you don't receive the email, reset it<strong style="color:red"><u><i> HERE!</i></u></strong></p>
+                  </a>
+                </div>
+                <div class="text-center p-t-136">
+                  <a class="txt2 beautiful" href="/homepage">
+                    Sign-in
+                    <i class="fas fa-sign-in-alt"></i>
+                  </a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+	  </div>
+	   <%include common/footer%>
+     
+    <!--===============================================================================================-->
+    <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/bootstrap/js/popper.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/select2/select2.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/tilt/tilt.jquery.min.js"></script>
+    <script>
+      $('.js-tilt').tilt({
+        scale: 1.5
+      })
+    </script>
+    <!--===============================================================================================-->
+    <script src="js/login.js"></script>
+
+</body>
+
+</html>

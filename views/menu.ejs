@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Menu - Shale PIZZAzzz</title>
+
+  <!-- Custom styles for this template -->
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/menu.css">
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+
+  <!-- Bootstrap core JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  <!--Font Awesome-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <% include common/header-menu%>
+  <div class="container-fluid menu-bg">
+		<div class="container py-5">
+			<div class="row">
+				<div class="col-lg-6">
+					<h1 class="h1-1 text-light">Menu</h1>
+					<hr class="hr">
+					<p class="text-light">There's no better feeling in the world than a warm pizza box on your lap.</p>
+					<p class="p-1 text-light">For Delivery<br>
+            <a href="tel:19001900" class="text-light"><i class="fas fa-phone-square text-warning"></i> 1900 1900</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+  <nav class="navbar navbar-expand-sm bg-warning justify-content-center">
+    <ul class="navbar-nav">
+      <li class="nav-item pr-4">
+        <a class="nav-link menu-nav-link" href="#pizza">Pizza</a>
+      </li>
+      <li class="nav-item pr-4">
+        <a class="nav-link menu-nav-link" href="#bread">Breads</a>
+      </li>
+      <li class="nav-item pr-4">
+        <a class="nav-link menu-nav-link" href="#sandwich">Sandwiches</a>
+      </li>
+    <li class="nav-item pr-4">
+        <a class="nav-link menu-nav-link" href="#dessert">Desserts</a>
+      </li>
+    <li class="nav-item pr-4">
+        <a class="nav-link menu-nav-link" href="#beverage">Beverages</a>
+      </li>
+    </ul>
+    <a href="../img/menu.pdf" class="menu-nav-link" title="Click here to download menu"download><i class="fas fa-download"></i></a>
+  </nav>
+
+<!-- Menu content -->
+<div class="menu-content bg-dark">
+  <div class="container">
+    <!-- Pizza -->
+    <div class="pt-4" id="pizza">
+        <div class="row">
+            <div class="col-lg-12">
+              <h1 class="menu-title">Pizza</h1>
+              <hr class="hr">
+              </div>
+        </div>
+
+        <div class="row">
+          <% products.forEach(function(product) {%>
+          <div class="col-lg-6 py-4">
+            <div class="row">
+                <div class="col-lg-4">
+                    <a href="#"><img class="w-100 rounded-circle" src="<%=product.img %>" alt=""></a>
+                </div>
+                <!-- div col-8 noi dung item -->
+                  <div class="col-lg-8 text-light">
+                    <h4 class="card-title"><%=product.name %></h4>
+                    <h5 class="price-text"><%=product.price %></h5>
+                    <p class="card-text"><%=product.des %></p>
+                    <!-- Button -->
+                    <div class="inline-group">
+                        <select class="btn btn-outline-warning btn-sm mr-1">
+                          <option>Small</option>
+                          <option>Medium</option>
+                          <option>Large</option>
+                          <option>Jumbo</option>
+                          <option>Party</option>
+                        </select>
+
+                        <label id='<%=product.price %>' style="display:none"><%=product.price %></label>
+                        <label id='<%=product.id %>' style="display:none"><%=product.id %></label>
+                        <button class="btn btn-warning font-weight-bold btn-sm" onclick="Addcart($(this).prev().text(),$(this).prev().prev().text())">Add to Cart</button>
+                    </div>
+                    <!-- end div botton -->
+                </div>
+                <!-- end div col-8 noi dung item -->
+            </div>
+          </div>
+          <% }) %>
+    </div>
+    <div class="col-lg-12">
+        <ul class="pagination justify-content-center">
+        <li class="page-item"><a class="page-link bg-dark border-0 text-warning" href="javascript:void(0);"><i class="fas fa-angle-double-left"></i></a></li>
+        <li class="page-item"><a class="page-link bg-dark border-0 text-warning" href="javascript:void(0);">1</a></li>
+        <li class="page-item"><a class="page-link bg-dark border-0 text-warning" href="javascript:void(0);">2</a></li>
+        <li class="page-item"><a class="page-link bg-dark border-0 text-warning" href="javascript:void(0);"><i class="fas fa-angle-double-right"></i></a></li>
+        </ul>
+    </div>
+  </div>
+  <!-- div pizza -->
+
+  <!-- Bread -->
+  <div class="py-4" id="bread">
+      <div class="row">
+          <div class="col-lg-12">
+            <h1 class="menu-title">Breads</h1>
+            <hr class="hr">
+            </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6 py-4">
+          <div class="row">
+              <div class="col-lg-4">
+                  <a href="#"><img class="w-100 rounded-circle" src="../img/bm1.jpg" alt=""></a>
+              </div>
+              <!-- div col-8 noi dung item -->
+                <div class="col-lg-8 text-light">
+                  <h4 class="card-title">GARLIC BREAD</h4>
+                  <h5 class="price-text">$5.2</h5>
+                  <p class="card-text">Hot, oven baked garlic bread</p>
+                  <!-- Button -->
+                  <div class="inline-group">
+                      <select class="btn btn-outline-warning btn-sm mr-1">
+                        <option>Small</option>
+                        <option>Medium</option>
+                        <option>Large</option>
+                        <option>Jumbo</option>
+                        <option>Party</option>
+                      </select>
+
+
+                      <button class="btn btn-warning font-weight-bold btn-sm">Add to Cart</button>
+                  </div>
+                  <!-- end div botton -->
+              </div>
+              <!-- end div col-8 noi dung item -->
+          </div>
+        </div>
+
+        <div class="col-lg-6 py-4">
+          <div class="row">
+              <div class="col-lg-4">
+                  <a href="#"><img class="w-100 rounded-circle" src="../img/bm2.jpg" alt=""></a>
+              </div>
+              <!-- div col-8 noi dung item -->
+                <div class="col-lg-8 text-light">
+                  <h4 class="card-title">CHEESY GARLIC BREAD</h4>
+                  <h5 class="price-text">$4.9</h5>
+                  <p class="card-text">A fresh baked loaf of bread with delicious garlic butter and topped with mozzarella cheese</p>
+                  <!-- Button -->
+                  <div class="inline-group">
+                      <select class="btn btn-outline-warning btn-sm mr-1">
+                        <option>Small</option>
+                        <option>Medium</option>
+                        <option>Large</option>
+                        <option>Jumbo</option>
+                        <option>Party</option>
+                      </select>
+
+
+                      <button class="btn btn-warning font-weight-bold btn-sm">Add to Cart</button>
+                  </div>
+                  <!-- end div botton -->
+              </div>
+              <!-- end div col-8 noi dung item -->
+          </div>
+        </div>
+
+
+        <div class="col-lg-6 py-4">
+          <div class="row">
+              <div class="col-lg-4">
+                  <a href="#"><img class="w-100 rounded-circle" src="../img/bm3.jpg" alt=""></a>
+              </div>
+              <!-- div col-8 noi dung item -->
+                <div class="col-lg-8 text-light">
+                  <h4 class="card-title">CHEESY SPUD BITES 8 PACK</h4>
+                  <h5 class="price-text">$6.2</h5>
+                  <p class="card-text">8 cheesy infused spud bites & tomato sauce dip</p>
+                  <!-- Button -->
+                  <div class="inline-group">
+                      <select class="btn btn-outline-warning btn-sm mr-1">
+                        <option>Small</option>
+                        <option>Medium</option>
+                        <option>Large</option>
+                        <option>Jumbo</option>
+                        <option>Party</option>
+                      </select>
+
+
+                      <button class="btn btn-warning font-weight-bold btn-sm">Add to Cart</button>
+                  </div>
+                  <!-- end div botton -->
+              </div>
+              <!-- end div col-8 noi dung item -->
+          </div>
+        </div>
+
+
+        <div class="col-lg-6 py-4">
+          <div class="row">
+              <div class="col-lg-4">
+                  <a href="#"><img class="w-100 rounded-circle" src="../img/bm4.jpg" alt=""></a>
+              </div>
+              <!-- div col-8 noi dung item -->
+                <div class="col-lg-8 text-light">
+                  <h4 class="card-title">TRIPLE DIPPERS </h4>
+                  <h5 class="price-text">$11.2</h5>
+                  <p class="card-text">10 Cheesy Sticks, 4 Seasoned Chicken Wings and 8 Cheesy Spud Bites with 3 dipping sauces</p>
+                  <!-- Button -->
+                  <div class="inline-group">
+                      <select class="btn btn-outline-warning btn-sm mr-1">
+                        <option>Small</option>
+                        <option>Medium</option>
+                        <option>Large</option>
+                        <option>Jumbo</option>
+                        <option>Party</option>
+                      </select>
+
+
+                      <button class="btn btn-warning font-weight-bold btn-sm">Add to Cart</button>
+                  </div>
+                  <!-- end div botton -->
+              </div>
+              <!-- end div col-8 noi dung item -->
+          </div>
+        </div>
+
+
+  </div>
+  <div class="col-lg-12">
+      <ul class="pagination justify-content-center">
+      <li class="page-item"><a class="page-link bg-dark border-0 text-warning" href="javascript:void(0);"><i class="fas fa-angle-double-left"></i></a></li>
+      <li class="page-item"><a class="page-link bg-dark border-0 text-warning" href="javascript:void(0);">1</a></li>
+      <li class="page-item"><a class="page-link bg-dark border-0 text-warning" href="javascript:void(0);">2</a></li>
+      <li class="page-item"><a class="page-link bg-dark border-0 text-warning" href="javascript:void(0);"><i class="fas fa-angle-double-right"></i></a></li>
+      </ul>
+  </div>
+</div>
+<!--end div bread -->
+
+ <!-- start div Sandwich -->
+ <div class="py-4" id="sandwich">
+     <div class="row">
+         <div class="col-lg-12">
+           <h1 class="menu-title">Sandwiches</h1>
+           <hr class="hr">
+           </div>
+     </div>
+
+     <div class="row">
+       <div class="col-lg-6 py-4">
+         <div class="row">
+             <div class="col-lg-4">
+                 <a href="#"><img class="w-100 rounded-circle" src="../img/sw1_2.jpg" alt=""></a>
+             </div>
+             <!-- div col-8 noi dung item -->
+               <div class="col-lg-8 text-light">
+                 <h4 class="card-title">CHICKEN & BACON RANCH MELT CHICKEN</h4>
+                 <h5 class="price-text">$6.7</h5>
+                 <p class="card-text">On the one hand, delicious strips of rotisserie-style chicken. On the other, strips of Maple wood smoked bacon. All topped off with a tangy smooth ranch sauce.”</p>
+                 <!-- Button -->
+                 <div class="inline-group">
+                     <select class="btn btn-outline-warning btn-sm mr-1">
+                       <option>Small</option>
+                       <option>Medium</option>
+                       <option>Large</option>
+                       <option>Jumbo</option>
+                       <option>Party</option>
+                     </select>
+                     <button class="btn btn-warning font-weight-bold btn-sm">Add to Cart</button>
+                 </div>
+                 <!-- end div botton -->
+             </div>
+             <!-- end div col-8 noi dung item -->
+         </div>
+       </div>
+
+       <div class="col-lg-6 py-4">
+         <div class="row">
+             <div class="col-lg-4">
+                 <a href="#"><img class="w-100 rounded-circle" src="../img/sw2_1.jpg" alt=""></a>
+             </div>
+             <!-- div col-8 noi dung item -->
+               <div class="col-lg-8 text-light">
+                 <h4 class="card-title">SPICY BUFFALO CHICKEN</h4>
+                 <h5 class="price-text">$7.9</h5>
+                 <p class="card-text">Are you a meat-lover? Then you'll love our Cold Cut Combo, with no artificial colours or flavours! One bite into these delicious deli meats, topped with crisp vegetables and served on freshly baked bread, and you'll be addicted.<!-- Button -->
+                 <div class="inline-group">
+                     <select class="btn btn-outline-warning btn-sm mr-1">
+                       <option>Small</option>
+                       <option>Medium</option>
+                       <option>Large</option>
+                       <option>Jumbo</option>
+                       <option>Party</option>
+                     </select>
+
+
+                     <button class="btn btn-warning font-weight-bold btn-sm">Add to Cart</button>
+                 </div>
+                 <!-- end div botton -->
+             </div>
+             <!-- end div col-8 noi dung item -->
+         </div>
+       </div>
+
+       <div class="col-lg-6 py-4">
+         <div class="row">
+             <div class="col-lg-4">
+                 <a href="#"><img class="w-100 rounded-circle" src="../img/sw4_1.jpg" alt=""></a>
+             </div>
+             <!-- div col-8 noi dung item -->
+               <div class="col-lg-8 text-light">
+                 <h4 class="card-title">MEATBALL MARINARA</h4>
+                 <h5 class="price-text">$7.9</h5>
+                 <p class="card-text">Zesty 100% Canadian meatballs covered with marinara sauce, served on freshly baked bread. Every bite is simply sensational! Get it toasted for even more great taste.”</p> <!-- Button -->
+                 <div class="inline-group">
+                     <select class="btn btn-outline-warning btn-sm mr-1">
+                       <option>Small</option>
+                       <option>Medium</option>
+                       <option>Large</option>
+                       <option>Jumbo</option>
+                       <option>Party</option>
+                     </select>
+
+
+                     <button class="btn btn-warning font-weight-bold btn-sm">Add to Cart</button>
+                 </div>
+                 <!-- end div botton -->
+             </div>
+             <!-- end div col-8 noi dung item -->
+         </div>
+       </div>
+
+       <div class="col-lg-6 py-4">
+         <div class="row">
+             <div class="col-lg-4">
+                 <a href="#"><img class="w-100 rounded-circle" src="../img/sw3_1.jpg" alt=""></a>
+             </div>
+             <!-- div col-8 noi dung item -->
+               <div class="col-lg-8 text-light">
+                 <h4 class="card-title">BLACK FOREST HAM</h4>
+                 <h5 class="price-text">$7.7</h5>
+                 <p class="card-text">Our Black Forest ham, made with 100% Canadian ham, has never been better. Load it up with all the crunchy veggies you like on your choice of freshly baked bread. Yum! At just 4 grams of fat*, it's something you can feel good about. <!-- Button -->
+                 <div class="inline-group">
+                     <select class="btn btn-outline-warning btn-sm mr-1">
+                       <option>Small</option>
+                       <option>Medium</option>
+                       <option>Large</option>
+                       <option>Jumbo</option>
+                       <option>Party</option>
+                     </select>
+
+
+                     <button class="btn btn-warning font-weight-bold btn-sm">Add to Cart</button>
+                 </div>
+                 <!-- end div botton -->
+             </div>
+             <!-- end div col-8 noi dung item -->
+         </div>
+       </div>
+ </div>
+ <div class="col-lg-12">
+     <ul class="pagination justify-content-center">
+     <li class="page-item"><a class="page-link bg-dark border-0 text-warning" href="javascript:void(0);"><i class="fas fa-angle-double-left"></i></a></li>
+     <li class="page-item"><a class="page-link bg-dark border-0 text-warning" href="javascript:void(0);">1</a></li>
+     <li class="page-item"><a class="page-link bg-dark border-0 text-warning" href="javascript:void(0);">2</a></li>
+     <li class="page-item"><a class="page-link bg-dark border-0 text-warning" href="javascript:void(0);"><i class="fas fa-angle-double-right"></i></a></li>
+     </ul>
+ </div>
+ </div>
+ <!-- end div sandwich -->
+
+ <!-- start div Desserts -->
+ <div class="py-4" id="dessert">
+     <div class="row">
+         <div class="col-lg-12">
+           <h1 class="menu-title">Desserts</h1>
+           <hr class="hr">
+           </div>
+     </div>
+
+     <div class="row">
+
+       <div class="col-lg-6 py-4">
+         <div class="row">
+             <div class="col-lg-4">
+                 <a href="#"><img class="w-100 rounded-circle" src="../img/des1_2.jpg" alt=""></a>
+             </div>
+             <!-- div col-8 noi dung item -->
+               <div class="col-lg-8 text-light">
+                 <h4 class="card-title">BUTTERMILK PIE</h4>
+                 <h5 class="price-text">$4.2</h5>
+                 <p class="card-text">Our classic take on this Southern favorite features a creamy, custardy filling in a buttery, flaky pie crust. We top it off with fluffy whipped cream and fresh sliced strawberries. </p>
+                 <!-- Button -->
+                 <div class="inline-group">
+                     <select class="btn btn-outline-warning btn-sm mr-1">
+                       <option>Small</option>
+                       <option>Medium</option>
+                       <option>Large</option>
+                       <option>Jumbo</option>
+                       <option>Party</option>
+                     </select>
+                     <button class="btn btn-warning font-weight-bold btn-sm" >Add to Cart</button>
+                 </div>
+                 <!-- end div botton -->
+             </div>
+             <!-- end div col-8 noi dung item -->
+         </div>
+       </div>
+
+       <div class="col-lg-6 py-4">
+         <div class="row">
+             <div class="col-lg-4">
+                 <a href="#"><img class="w-100 rounded-circle" src="../img/des2_1.jpg" alt=""></a>
+             </div>
+             <!-- div col-8 noi dung item -->
+               <div class="col-lg-8 text-light">
+                 <h4 class="card-title">DOUBLE CHOCOLATE FIDGE COCA-COLA® CAKE</h4>
+                 <h5 class="price-text">$4.2</h5>
+                 <p class="card-text">Oops! We Doubled the Chocolate. What started as a happy accident is now what makes our famous cake so special. We make it daily, by hand, and serve it warm with rich, creamy vanilla ice cream.</p>
+                 <!-- Button -->
+                 <div class="inline-group">
+                     <select class="btn btn-outline-warning btn-sm mr-1">
+                       <option>Small</option>
+                       <option>Medium</option>
+                       <option>Large</option>
+                       <option>Jumbo</option>
+                       <option>Party</option>
+                     </select>
+                     <button class="btn btn-warning font-weight-bold btn-sm" >Add to Cart</button>
+                 </div>
+                 <!-- end div botton -->
+             </div>
+             <!-- end div col-8 noi dung item -->
+         </div>
+       </div>
+
+       <div class="col-lg-6 py-4">
+         <div class="row">
+             <div class="col-lg-4">
+                 <a href="#"><img class="w-100 rounded-circle" src="../img/des3_1.jpg" alt=""></a>
+             </div>
+             <!-- div col-8 noi dung item -->
+               <div class="col-lg-8 text-light">
+                 <h4 class="card-title">FRUIT COBBLER WITH ICE CREAM</h4>
+                 <h5 class="price-text">$4.2</h5>
+                 <p class="card-text">We bake our fruit cobblers daily and serve them warm. Each classic cobbler is filled with blackberries or peaches and topped with Premium Vanilla Ice Cream. (Flavors based on availability)</p>
+                 <!-- Button -->
+                 <div class="inline-group">
+                     <select class="btn btn-outline-warning btn-sm mr-1">
+                       <option>Small</option>
+                       <option>Medium</option>
+                       <option>Large</option>
+                       <option>Jumbo</option>
+                       <option>Party</option>
+                     </select>
+                     <button class="btn btn-warning font-weight-bold btn-sm" >Add to Cart</button>
+                 </div>
+                 <!-- end div botton -->
+             </div>
+             <!-- end div col-8 noi dung item -->
+         </div>
+       </div>
+
+       <div class="col-lg-6 py-4">
+         <div class="row">
+             <div class="col-lg-4">
+                 <a href="#"><img class="w-100 rounded-circle" src="../img/des4_1.jpg" alt=""></a>
+             </div>
+             <!-- div col-8 noi dung item -->
+               <div class="col-lg-8 text-light">
+                 <h4 class="card-title">ALL-AMERICAN APPLE PIE(NO SUGAR ADDED)</h4>
+                 <h5 class="price-text">$4.2</h5>
+                 <p class="card-text">Served with no sugar added Premium Vanilla Ice Cream.</p>
+                 <!-- Button -->
+                 <div class="inline-group">
+                     <select class="btn btn-outline-warning btn-sm mr-1">
+                       <option>Small</option>
+                       <option>Medium</option>
+                       <option>Large</option>
+                       <option>Jumbo</option>
+                       <option>Party</option>
+                     </select>
+                     <button class="btn btn-warning font-weight-bold btn-sm" >Add to Cart</button>
+                 </div>
+                 <!-- end div botton -->
+             </div>
+             <!-- end div col-8 noi dung item -->
+         </div>
+       </div>
+
+ </div>
+ <div class="col-lg-12">
+     <ul class="pagination justify-content-center">
+     <li class="page-item"><a class="page-link bg-dark border-0 text-warning" href="javascript:void(0);"><i class="fas fa-angle-double-left"></i></a></li>
+     <li class="page-item"><a class="page-link bg-dark border-0 text-warning" href="javascript:void(0);">1</a></li>
+     <li class="page-item"><a class="page-link bg-dark border-0 text-warning" href="javascript:void(0);">2</a></li>
+     <li class="page-item"><a class="page-link bg-dark border-0 text-warning" href="javascript:void(0);"><i class="fas fa-angle-double-right"></i></a></li>
+     </ul>
+ </div>
+</div>
+
+ <!-- end div desserts -->
+
+ <!-- start div Beverages -->
+ <div class="py-4" id="beverage">
+     <div class="row">
+         <div class="col-lg-12">
+           <h1 class="menu-title">Beverages</h1>
+           <hr class="hr">
+           </div>
+     </div>
+
+     <div class="row">
+
+       <div class="col-lg-6 py-4">
+         <div class="row">
+             <div class="col-lg-4">
+                 <a href="#"><img class="w-100 rounded-circle" src="../img/du1.jpg" alt=""></a>
+             </div>
+             <!-- div col-8 noi dung item -->
+               <div class="col-lg-8 text-light">
+                 <h4 class="card-title">JERRY THOMAS' CHAMPAGNE PUNCH</h4>
+                 <h5 class="price-text">$6.2</h5>
+                 <p class="card-text">Dating to the 1800s, this recipe is easy, breezy, pink and fruity—and still completely sophisticated. It comes from Cincinnati mixologist Molly Wellman. </p>
+                 <!-- Button -->
+                 <div class="inline-group">
+                     <select class="btn btn-outline-warning btn-sm mr-1">
+                       <option>Small</option>
+                       <option>Medium</option>
+                       <option>Large</option>
+                       <option>Jumbo</option>
+                       <option>Party</option>
+                     </select>
+                     <button class="btn btn-warning font-weight-bold btn-sm" >Add to Cart</button>
+                 </div>
+                 <!-- end div botton -->
+             </div>
+             <!-- end div col-8 noi dung item -->
+         </div>
+       </div>
+
+       <div class="col-lg-6 py-4">
+         <div class="row">
+             <div class="col-lg-4">
+                 <a href="#"><img class="w-100 rounded-circle" src="../img/du2.jpg" alt=""></a>
+             </div>
+             <!-- div col-8 noi dung item -->
+               <div class="col-lg-8 text-light">
+                 <h4 class="card-title">SAGE WOODSTOCK</h4>
+                 <h5 class="price-text">$6.2</h5>
+                 <p class="card-text">This festive gin cocktail gets its sweet-tart flavor from maple syrup and Meyer lemon juice. The recipe comes from the Chowgirls Killer Catering cookbook. Feeling fancy? Garnish each glass with a sage leaf or, at the holidays, sugared cranberries.</p>
+                 <!-- Button -->
+                 <div class="inline-group">
+                     <select class="btn btn-outline-warning btn-sm mr-1">
+                       <option>Small</option>
+                       <option>Medium</option>
+                       <option>Large</option>
+                       <option>Jumbo</option>
+                       <option>Party</option>
+                     </select>
+                     <button class="btn btn-warning font-weight-bold btn-sm" >Add to Cart</button>
+                 </div>
+                 <!-- end div botton -->
+             </div>
+             <!-- end div col-8 noi dung item -->
+         </div>
+       </div>
+
+       <div class="col-lg-6 py-4">
+         <div class="row">
+             <div class="col-lg-4">
+                 <a href="#"><img class="w-100 rounded-circle" src="../img/du3.jpg" alt=""></a>
+             </div>
+             <!-- div col-8 noi dung item -->
+               <div class="col-lg-8 text-light">
+                 <h4 class="card-title">CARAMEL-HAZELNUT CAFE MOCHA</h4>
+                 <h5 class="price-text">$7.2</h5>
+                 <p class="card-text">Melted Nutella. Need we say more? Our updated version of hot chocolate is made in a slow cooker, just for kicks, and after cooking, can be kept on the warm setting for one hour.</p>
+                 <!-- Button -->
+                 <div class="inline-group">
+                     <select class="btn btn-outline-warning btn-sm mr-1">
+                       <option>Small</option>
+                       <option>Medium</option>
+                       <option>Large</option>
+                       <option>Jumbo</option>
+                       <option>Party</option>
+                     </select>
+                     <button class="btn btn-warning font-weight-bold btn-sm" >Add to Cart</button>
+                 </div>
+                 <!-- end div botton -->
+             </div>
+             <!-- end div col-8 noi dung item -->
+         </div>
+       </div>
+
+       <div class="col-lg-6 py-4">
+         <div class="row">
+             <div class="col-lg-4">
+                 <a href="#"><img class="w-100 rounded-circle" src="../img/du4.jpg" alt=""></a>
+             </div>
+             <!-- div col-8 noi dung item -->
+               <div class="col-lg-8 text-light">
+                 <h4 class="card-title">COLORFUL COCKTAIL</h4>
+                 <h5 class="price-text">$6.2</h5>
+                 <p class="card-text">Rub the rims of cocktail glasses with orange wedges and dip in a mix of coarse red and gold sugars for added flair.
+
+Cool cocktail: In a large pitcher, chilled rose Prosecco. </p>
+                 <!-- Button -->
+                 <div class="inline-group">
+                     <select class="btn btn-outline-warning btn-sm mr-1">
+                       <option>Small</option>
+                       <option>Medium</option>
+                       <option>Large</option>
+                       <option>Jumbo</option>
+                       <option>Party</option>
+                     </select>
+                     <button class="btn btn-warning font-weight-bold btn-sm" >Add to Cart</button>
+                 </div>
+                 <!-- end div botton -->
+             </div>
+             <!-- end div col-8 noi dung item -->
+         </div>
+       </div>
+
+ </div>
+ <div class="col-lg-12">
+     <ul class="pagination justify-content-center">
+     <li class="page-item"><a class="page-link bg-dark border-0 text-warning" href="javascript:void(0);"><i class="fas fa-angle-double-left"></i></a></li>
+     <li class="page-item"><a class="page-link bg-dark border-0 text-warning" href="javascript:void(0);">1</a></li>
+     <li class="page-item"><a class="page-link bg-dark border-0 text-warning" href="javascript:void(0);">2</a></li>
+     <li class="page-item"><a class="page-link bg-dark border-0 text-warning" href="javascript:void(0);"><i class="fas fa-angle-double-right"></i></a></li>
+     </ul>
+ </div>
+</div>
+
+ <!-- end div Beverages -->
+</div>
+</div>
+  <label id='selecteditem' style="display: none"></label>
+	<label id='TOTAL' style="display: none"></label>
+  <% include common/footer %>
+
+  <script src="js/add-to-cart.js"></script>
+  <script src="js/side-nav.js"></script>
+  <script src="js/validate-form.js"></script>
+
+
+</body>
+
+</html>

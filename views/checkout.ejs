@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Check Out - Shale PIZZAzzz</title>
+
+  <!-- Custom styles for this template -->
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/checkout.css">
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+
+  <!-- Bootstrap core JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  <!--Font Awesome-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+
+<body>
+  <% include common/header %>
+  <div class="checkout-bg">
+    <div class="pt-5 pb-5">
+      <a class="text-center">
+        <p class=" size-text-1">Check Out</p>
+      </a>
+      <hr class="hr-1">
+      <br>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-5"></div>
+          <a class="text-center text-warning ml-lg-5 size-text-2" href="/homepage">Home</a>
+          <p class="text-warning size-text-2">&nbsp;&nbsp;<i class="fas fa-angle-double-right"></i>&nbsp;&nbsp;Check Out</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="bg-dark">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 pr-5">
+          <h1 class="pt-lg-5 font-text-1">Billing Details</h1>
+
+          <div class="form-group mt-lg-4">
+            <label class="size-text-2 font-text-2 text-light" for="sel1">COUNTRY</label>
+            <select class="form-control" id="sel1">
+              <option>United Kingdom-0</option>
+              <option>United Kingdom-1</option>
+              <option>United Kingdom-2</option>
+            </select>
+          </div>
+
+          <div class="form-group row">
+            <div class="col-lg-6 float-left" style="">
+              <p class="size-text-2 font-text-2 text-light">FIRST NAME</p>
+              <input class="form-control" type="text" name="" value="">
+            </div>
+            <div class="col-lg-6" style="">
+              <p class="size-text-2 font-text-2 text-light">LAST NAME</p>
+              <input class="form-control" type="text" name="" value="">
+            </div>
+          </div>
+
+          <div class="" style="">
+            <p class="size-text-2 font-text-2 text-light">COMPANY NAME</p>
+            <input class="form-control" type="text" name="" value="">
+          </div>
+
+          <div class="mt-lg-2" style="">
+            <p class="size-text-2 font-text-2 text-light">ADDRESS</p>
+            <input class="form-control" type="text" name="" value="" placeholder="Street address">
+            <input class="form-control mt-3" type="text" name="" value="" placeholder="Apartment, suite, unit etc.(optional)">
+          </div>
+
+          <div class="mt-lg-2" style="">
+            <p class="size-text-2 font-text-2 text-light">TOWN / CITY</p>
+            <input class="form-control" type="text" name="" value="">
+          </div>
+
+          <div class="form-group row mt-lg-2">
+            <div class="col-lg-6 float-left" style="">
+              <p class="size-text-2 font-text-2 text-light">COUNTY</p>
+              <input class="form-control" type="text" name="" value="">
+            </div>
+            <div class="col-lg-6" style="">
+              <p class="size-text-2 font-text-2 text-light">POST CODE</p>
+              <input class="form-control" type="text" name="" value="">
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <div class="col-lg-6 float-left" style="">
+              <p class="size-text-2 font-text-2 text-light">EMALL ADDRESS</p>
+              <input class="form-control" type="text" name="" value="">
+            </div>
+            <div class="col-lg-6" style="">
+              <p class="size-text-2 font-text-2 text-light">PHONE</p>
+              <input class="form-control" type="text" name="" value="">
+            </div>
+          </div>
+
+          <div class="form-check">
+            <label class="container">
+              <p class="font-text-2 text-light">Create an account?</p>
+              <input class="input-checkbox" type="checkbox" checked="checked">
+              <span class="checkmark"></span>
+            </label>
+          </div>
+
+          <hr class="hr-2">
+          <div class="">
+            <h1 class="pt-lg-3 font-text-1">Shipping Address</h1>
+            <div class="form-check">
+              <label class="container">
+                <p class="font-text-2 text-light">Ship to a different address?</p>
+                <input class="input-checkbox" type="checkbox" checked="checked">
+                <span class="checkmark"></span>
+              </label>
+            </div>
+
+            <div class="mb-lg-5">
+              <textarea class="form-control font-weight-light" type="textarea" name="comments" id="comments" placeholder="notes about your order, e.g. special notes for delivery" maxlength="4000" rows="5"></textarea>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="col-lg-4 col-md-12 mt-5 pt-5">
+          <div class="card border-warning bg-dark mt-5 text-light" style="border: solid 3px;">
+            <div class="card-header">
+              <h1 class="font-text-1 text-center">Your Order</h1>
+            </div>
+            <div class="card-body row text-light" style="margin-bottom:-15px;">
+              <p class="col-lg-8 col-md-8 size-text-2">Product</p>
+              <p class="col-lg-4 col-md-4 size-text-2">Total</p>
+
+              <p class="col-lg-8">The Philly Cheese x1</p>
+              <p class="col-lg-4">$18.85</p>
+              <p class="col-lg-8">The Big Pepperoni x1</p>
+              <p class="col-lg-4">$17.95</p>
+              <p class="col-lg-8">The Three Meats x1</p>
+              <p class="col-lg-4">$18.95</p>
+
+
+            </div>
+            <div class="text-center">
+              <hr class="hr-2">
+            </div>
+
+            <div class="card-body row">
+              <h5 class="col-lg-8">Order Total</h5>
+              <h5 class="col-lg-4">$55.75</h5>
+              <div class="col-lg-12 pt-4 text-center">
+                <h1 class="font-text-1">Payment Methods</h1>
+              </div>
+              <div class="m-2">
+              <label class="container-1"><p class="size-text-3">Direct Bank Transfer
+                Please use your Order ID as the payment reference. Your order won’t be shipped until the funds have cleared in our account.</p>
+                <input type="radio" checked="checked" name="radio">
+                <span class="checkmark-1"></span>
+              </label>
+              <label class="container-1"><p class="size-text-3">Cheque Payment</p>
+                <input type="radio" name="radio">
+                <span class="checkmark-1"></span>
+              </label>
+              <label class="container-1"><p class="size-text-3">Paypal</p>
+                <img src="../img/paypal.png" alt=""><a class="size-text-3" href="https://www.paypal.com/us/home" target="_blank"> What is Paypal?</a>
+                <input type="radio" name="radio">
+                <span class="checkmark-1"></span>
+              </label>
+              <label class="container-1"><p class="size-text-3">Four<p>
+                <input type="radio" name="radio">
+                <span class="checkmark-1"></span>
+              </label>
+            </div>
+            <div class="form-check m-2">
+              <label class="container">
+                <p class="font-text-2 text-light">I have read and accept the
+Terms & Conditions</p>
+                <input class="input-checkbox" type="checkbox" checked="checked">
+                <span class="checkmark"></span>
+              </label>
+            </div>
+            <button class="form-control btn bg-warning mx-3 mb-4" style="font-size:25px; color: #000;" type="button" name="button">Place Order</button>
+            </div>
+
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+  <% include common/footer %>
+</body>
+
+</html>

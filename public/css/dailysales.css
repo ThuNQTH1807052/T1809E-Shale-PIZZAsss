@@ -1,0 +1,66 @@
+@media (max-width: 768px) {
+  #big-menu {
+    display: none
+  }
+}
+
+.bg_dark {
+  background-color: #000;
+}
+
+.font-text-1{
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+.size-text-1{
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 53px;
+  color: #FFFFFF;
+}
+.size-text-2{
+  font-size:22px;
+}
+
+.size-text-3{
+  font-size:18px;
+}
+.h1-1 {
+  color: white;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 43px;
+}
+
+.hr-1 {
+  border: solid 1px;
+  color: #FF9F00;
+  width: 50%;
+  margin-left: 0;
+}
+
+.p-1 {
+  font-family: "Arial", Gadget, sans-serif;
+  font-size: 36px;
+}
+
+
+@media (min-width:768px) {
+  #menu-min {
+    display: none;
+  }
+}
+
+.font-1{
+    font-family: cooper;
+}
+.background {
+    background-image: url("../img/weeken-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+}
+
+.bg-3{
+background: rgba(37, 35, 30, 0.75)
+}
+.border{
+  border-radius: 10px;
+}
